@@ -12,12 +12,14 @@ import Home from './pages/Home'
 import PropertyDetails from './pages/PropertyDetails';
 
 const App = () => {
-  return ( 
-  <div>
+  return <div className='max-w-[1440px] mx-auto bg-white'>
     <Header />
+    <Routes>
+      <Route path='/' element={<Home />} />
+      <Route path='/' element={<PropertyDetails />} />
+    </Routes>
     <Footer />
-  </div>
-  )
+  </div>;
 }
 
 export default App;
